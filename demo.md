@@ -38,7 +38,7 @@ group by `o`.`ORDER_ID`,`o`.`ORDER_DATETIME`,`o`.`ORDER_STATUS`,`c`.`CUSTOMER_ID
     ,`oi`.`LINE_ITEM_ID`,`oi`.`QUANTITY`,`oi`.`UNIT_PRICE` limit 10;
 ```
 
-## Dri Load Table in lakehouse
+## Dry Load Table in lakehouse
 ```sql
 SET @db_list = '["mysql_customer_orders"]';
 SET @dl_tables = '[{
